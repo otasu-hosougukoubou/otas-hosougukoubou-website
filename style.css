@@ -524,3 +524,118 @@ h1{
   display:block;
   height:1.15rem;
 }
+
+
+/* v17: 初めての方へ / ご依頼の流れ */
+.first-visit{
+  background:#fff;
+}
+.first-visit-heading{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:28px;
+  margin-bottom:34px;
+}
+.first-visit-heading h2{
+  margin:0;
+}
+.first-visit-heading p{
+  margin:0;
+  max-width:620px;
+  font-size:1.12rem;
+  line-height:1.8;
+}
+.first-visit-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:18px;
+}
+.visit-step{
+  position:relative;
+  padding:26px 22px 24px;
+  border:1px solid #eadfce;
+  border-radius:18px;
+  background:#fffaf4;
+  min-height:220px;
+}
+.step-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:48px;
+  margin-bottom:16px;
+  border-radius:50%;
+  background:#f08a24;
+  color:#fff;
+  font-weight:800;
+  font-size:1rem;
+  letter-spacing:.04em;
+}
+.visit-step h3{
+  margin:0 0 12px;
+  font-size:1.18rem;
+  line-height:1.45;
+}
+.visit-step p{
+  margin:0;
+  font-size:1.03rem;
+  line-height:1.85;
+}
+.first-visit-note{
+  margin-top:28px;
+  padding:26px 28px;
+  border-radius:18px;
+  background:#fff4e6;
+  text-align:center;
+}
+.first-visit-note p{
+  margin:0 0 18px;
+  font-size:1.18rem;
+  font-weight:700;
+  line-height:1.7;
+}
+.first-visit-note .button{
+  margin:0 auto 12px;
+}
+.first-visit-note span{
+  display:block;
+  font-size:.98rem;
+}
+
+@media(max-width:1000px){
+  .first-visit-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .first-visit-heading{
+    display:block;
+  }
+  .first-visit-heading p{
+    margin-top:12px;
+  }
+}
+
+@media(max-width:620px){
+  .first-visit-grid{
+    grid-template-columns:1fr;
+  }
+  .visit-step{
+    min-height:auto;
+  }
+  .first-visit-note{
+    padding:22px 18px;
+  }
+}
+
+/* v17.1: 初めての方へ・電話案内文を少し大きく */
+.first-visit-note p{
+  font-size:1.42rem;
+  line-height:1.7;
+}
+
+@media(max-width:620px){
+  .first-visit-note p{
+    font-size:1.25rem;
+  }
+}
