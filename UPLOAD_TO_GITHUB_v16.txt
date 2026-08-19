@@ -1,0 +1,18 @@
+公開・SEO最終版 v16
+
+見た目は大きく変えず、検索エンジン向けの内部設定を強化しています。
+
+主な変更:
+・検索結果用タイトルと説明文を改善
+・那覇市／沖縄県／補装具／短下肢装具／長下肢装具／コルセット／インソール／修理調整を構造化
+・Google向けLocalBusiness情報を強化
+・サービス情報をServiceとして整理
+・robots.txt / sitemap.xml 更新
+・CNAME維持
+
+GitHubへの反映:
+1. ZIPを展開
+2. otas-hosougukoubou-website → Add file → Upload files
+3. 展開した中身をすべてアップロード
+4. Commit changes
+5. 数分後 https://otas-hosougukoubou.com/ を確認
