@@ -639,3 +639,26 @@ h1{
     font-size:1.25rem;
   }
 }
+
+
+/* v18: final SEO/content refinements */
+.hero-consult{
+  margin:1.45rem 0 0;
+  max-width:640px;
+  font-size:1.12rem;
+  line-height:1.75;
+  font-weight:700;
+}
+.hero-consult + .button.primary{
+  margin-top:1rem;
+}
+.contact-hours{
+  margin:.65rem 0 1rem;
+  font-weight:700;
+}
+@media(max-width:620px){
+  .hero-consult{
+    font-size:1rem;
+    line-height:1.65;
+  }
+}
