@@ -662,3 +662,136 @@ h1{
     line-height:1.65;
   }
 }
+
+
+/* v19: insole SEO landing page */
+.service-grid > article:first-child{grid-template-rows:260px 3.2em auto auto}
+.service-more{display:block;margin:0 18px 22px;color:var(--orange-dark);font-weight:700;text-align:center;text-underline-offset:4px}
+.insole-hero{padding:66px 0;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%)}
+.insole-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.insole-title{display:block;font-size:clamp(2.1rem,3.7vw,3.45rem);line-height:1.35}
+.insole-title span{color:var(--orange)}
+.insole-lead{font-size:1.22rem;line-height:1.9;margin:24px 0 14px}
+.insole-note{font-weight:700;font-size:1.08rem;line-height:1.8;margin:0 0 18px}
+.insole-hero-photo{width:100%;height:520px;object-fit:contain;background:#fff;border-radius:24px;padding:18px}
+.narrow-content{max-width:920px}
+.narrow-content > p:not(.section-kicker){font-size:1.17rem}
+.insole-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.insole-points article{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+.insole-points h3{margin:0 0 10px;font-size:1.28rem;color:var(--orange-dark)}
+.insole-points p{margin:0;font-size:1.08rem;line-height:1.8}
+.insole-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.insole-detail-grid img{width:100%;max-height:500px;object-fit:cover;border-radius:22px}
+.insole-detail-grid p{font-size:1.17rem}
+.consult-box{padding:28px 30px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.consult-box p{margin:0;font-size:1.14rem;line-height:1.9}
+.consult-box .consult-caution{margin-top:14px;font-size:1rem;color:var(--muted)}
+.insole-contact{text-align:center}
+.insole-contact > p:not(.section-kicker){font-size:1.2rem;font-weight:700}
+.insole-contact .button{margin:8px auto 10px}
+.insole-contact span{display:block;color:var(--muted)}
+.back-home{display:inline-block;margin-top:22px;color:var(--orange-dark);font-weight:700;text-underline-offset:4px}
+.site-nav a[aria-current="page"]{color:var(--orange-dark)}
+@media(max-width:900px){
+  .insole-hero-grid,.insole-detail-grid{grid-template-columns:1fr}
+  .insole-hero-photo{height:440px}
+  .insole-points{grid-template-columns:1fr}
+  .service-grid > article:first-child{grid-template-rows:300px 3.2em auto auto}
+}
+@media(max-width:620px){
+  .insole-hero{padding:52px 0}
+  .insole-title{font-size:2rem}
+  .insole-lead{font-size:1.08rem}
+  .insole-hero-photo{height:auto;max-height:420px}
+  .service-grid > article:first-child{grid-template-rows:auto auto auto auto}
+}
+
+
+/* v20: desktop header one-line navigation */
+@media(min-width:901px){
+  .site-header .container{
+    width:min(calc(100% - 36px),1240px);
+  }
+  .site-header .header-inner{
+    gap:18px;
+  }
+  .site-header .brand{
+    flex:0 0 auto;
+  }
+  .site-header .brand img{
+    width:150px;
+    height:70px;
+  }
+  .site-header .brand span{
+    font-size:clamp(1.65rem,2.15vw,2.15rem);
+  }
+  .site-nav{
+    flex:0 0 auto;
+    flex-wrap:nowrap;
+    gap:22px;
+  }
+  .site-nav a{
+    white-space:nowrap;
+    word-break:keep-all;
+    font-size:1.05rem;
+    line-height:1.2;
+  }
+}
+
+/* v20: highlight symptom names without making the hero feel crowded */
+.insole-lead strong{
+  color:var(--orange-dark);
+  font-weight:800;
+}
+
+
+/* v22: approved insole hero layout */
+@media(min-width:901px){
+  .insole-hero{padding:52px 0 58px}
+  .insole-hero-grid{
+    grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);
+    gap:46px;
+    align-items:start;
+  }
+  .insole-hero .section-kicker{margin-top:4px;margin-bottom:8px}
+  .insole-title{
+    white-space:nowrap;
+    word-break:keep-all;
+    font-size:clamp(2.15rem,3.2vw,3.25rem);
+    line-height:1.22;
+    letter-spacing:-.035em;
+    margin-bottom:0;
+  }
+  .insole-lead{
+    font-size:clamp(1.08rem,1.35vw,1.22rem);
+    line-height:1.82;
+    margin:22px 0 14px;
+  }
+  .insole-note{
+    margin:14px 0 14px;
+    padding:16px 20px;
+    border:1px solid rgba(235,111,0,.35);
+    border-radius:14px;
+    background:rgba(255,255,255,.68);
+    font-size:clamp(1.02rem,1.18vw,1.12rem);
+    line-height:1.75;
+  }
+  .insole-hero .button.primary{margin-top:0}
+  .insole-hero-photo{
+    height:500px;
+    margin-top:98px;
+    padding:0;
+    object-fit:cover;
+    object-position:center;
+    background:#fff;
+    border-radius:22px;
+  }
+}
+@media(max-width:900px){
+  .insole-title{white-space:normal}
+  .desktop-break{display:none}
+}
+@media(max-width:620px){
+  .insole-lead{margin-top:18px;line-height:1.78}
+  .insole-note{padding:14px 16px;border:1px solid rgba(235,111,0,.30);border-radius:14px;background:rgba(255,255,255,.7)}
+}
