@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>那覇市の補装具の修理・調整・作り直し｜オータス補装具工房</title>
+  <meta name="description" content="那覇市のオータス補装具工房。装具が合わない、痛い、壊れたなどのお困りごとに、補装具の修理・調整・作り直しをご案内します。短下肢装具をはじめ、装具の状態や身体の変化に合わせてご相談ください。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://otas-hosougukoubou.com/repair.html">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="オータス補装具工房">
+  <meta property="og:title" content="那覇市の補装具の修理・調整・作り直し｜オータス補装具工房">
+  <meta property="og:description" content="装具が壊れた、合わなくなった、痛みや違和感があるなど、補装具の修理・調整・作り直しをご案内します。">
+  <meta property="og:url" content="https://otas-hosougukoubou.com/repair.html">
+  <meta property="og:image" content="https://otas-hosougukoubou.com/assets/repair-service-v9.jpg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* repair page / v2 : existing OTAS site style + A4 handout structure */
+    .repair-page{--rp-orange:#e87518;--rp-orange-dark:#c95d0a;--rp-cream:#fff8ef;--rp-cream2:#fff2e2;--rp-green:#edf7df;--rp-purple:#f4efff;--rp-text:#38322e;--rp-muted:#665e57;--rp-line:#eadfd3;overflow:hidden}
+    .repair-page *{box-sizing:border-box}
+    .repair-page .container{width:min(calc(100% - 40px),1120px);margin:auto}
+    .repair-crumb{font-size:.82rem;color:#81776f;padding:13px 0 8px}
+    .repair-crumb a{color:var(--rp-orange-dark);text-decoration:none;font-weight:700}
+
+    .repair-hero{padding:26px 0 38px;background:linear-gradient(135deg,#fff 0%,#fff9f3 60%,#fff1df 100%)}
+    .repair-hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:34px;align-items:center}
+    .repair-kicker{display:inline-flex;align-items:center;gap:9px;margin:0 0 9px;color:var(--rp-orange-dark);font-weight:900;font-size:.83rem;letter-spacing:.12em}
+    .repair-kicker::before{content:"";width:27px;height:4px;border-radius:99px;background:var(--rp-orange)}
+    .repair-hero h1{display:block;color:var(--rp-text);font-size:clamp(2rem,3.15vw,3rem);line-height:1.28;letter-spacing:-.04em;margin:0}
+    .repair-hero h1 .hero-key{display:block;color:var(--rp-text);font-weight:600;white-space:nowrap}
+    .repair-hero h1 .hero-sub{display:block;color:var(--rp-orange);font-weight:600;margin-top:2px;white-space:nowrap}
+    .repair-lead{font-size:1.02rem;line-height:1.85;color:var(--rp-muted);margin:15px 0 18px;max-width:670px}
+    .repair-hero-call{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .repair-hero-call .button{min-height:46px;font-size:1.03rem;padding:9px 21px}
+    .repair-call-note{font-size:.86rem;color:#6d645d;font-weight:700}
+    .repair-hero-photo{width:100%;height:330px;object-fit:contain;background:#fff;border:1px solid var(--rp-line);border-radius:22px;padding:12px;box-shadow:0 12px 30px rgba(91,59,30,.10)}
+
+    .repair-jump{padding:12px 0 26px;background:#fff}
+    .repair-jump-inner{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+    .repair-jump a{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid var(--rp-line);border-radius:999px;background:#fff;color:#4d453f;text-decoration:none;font-weight:800;font-size:.86rem;box-shadow:0 3px 12px rgba(70,50,30,.04)}
+    .repair-jump a b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--rp-orange);color:#fff;font-size:.75rem}
+
+    .repair-section{padding:52px 0}
+    .repair-section.soft{background:var(--rp-cream)}
+    .repair-section.tint{background:linear-gradient(180deg,#fff 0%,#fffaf5 100%)}
+    .repair-section-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:25px}
+    .repair-section-title{display:flex;align-items:center;gap:13px;min-width:0;flex:1 1 auto}
+    .repair-number{flex:0 0 auto;display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--rp-orange);color:#fff;font-weight:900;font-size:1.35rem;box-shadow:0 7px 15px rgba(232,117,24,.20)}
+    .repair-section-title h2{margin:0;font-size:clamp(1.55rem,2.15vw,2rem);line-height:1.28;letter-spacing:-.035em}
+    .repair-section-head p{margin:0;flex:0 0 40%;max-width:450px;color:var(--rp-muted);font-size:.94rem;line-height:1.75;text-align:right}
+    @media(min-width:951px){
+      .repair-section-title h2{white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+    }
+
+    .repair-lifespan{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .life-card{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;position:relative;border-radius:18px;padding:20px 24px;background:#fff;border:1px solid var(--rp-line);box-shadow:0 7px 20px rgba(70,50,30,.055);overflow:hidden}
+    .life-card:first-child{background:linear-gradient(110deg,#fffaf4,#fff)}
+    .life-card:last-child{background:linear-gradient(110deg,#f7fbed,#fff)}
+    .life-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:#f08a24}.life-card:last-child::before{background:#8eb74b}
+    .life-card h3{margin:0 0 5px;font-size:1.1rem;line-height:1.45}.life-card .life-time{font-size:1.85rem;font-weight:900;color:var(--rp-orange);line-height:1.1}.life-card:last-child .life-time{color:#6f9d2f}
+    .life-card p{margin:0;color:var(--rp-muted);font-size:.84rem;line-height:1.65}
+    .repair-note{margin:10px 0 0;color:#786f68;font-size:.79rem}
+
+    .change-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .change-card{position:relative;background:#fff;border:1px solid var(--rp-line);border-radius:17px;padding:12px 10px 16px;text-align:center;min-height:228px;box-shadow:0 6px 18px rgba(70,50,30,.045);overflow:hidden}
+    .change-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--rp-orange);border-radius:17px 17px 0 0}
+    .change-visual{height:118px;margin:2px auto 10px;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .change-visual img{width:100%;height:100%;object-fit:contain;display:block}
+    .change-card h3{font-size:.98rem;margin:0;line-height:1.4}.change-card p{margin:4px 0 0;color:#6d645d;font-size:.76rem;line-height:1.45}
+
+    .repair-feature{display:grid;grid-template-columns:.92fr 1.08fr;gap:20px;align-items:stretch}
+    .repair-feature-media{background:#fff;border:1px solid var(--rp-line);border-radius:20px;padding:12px;display:flex;align-items:center;justify-content:center;min-height:310px;box-shadow:0 7px 20px rgba(70,50,30,.045)}
+    .repair-feature-media img{width:100%;height:285px;object-fit:contain}
+    .repair-feature-copy{background:#fff;border:1px solid var(--rp-line);border-radius:20px;padding:25px}
+    .repair-feature-copy h3{margin:0 0 8px;font-size:1.35rem}.repair-feature-copy p{margin:0;color:var(--rp-muted);font-size:.94rem;line-height:1.8}
+    .repair-checks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:17px}
+    .repair-check{padding:11px 12px;border-radius:12px;background:#fff8ef;font-size:.86rem;font-weight:800;color:#4b443e}.repair-check::before{content:"✓";color:var(--rp-orange);margin-right:7px}
+
+    .trouble-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    .trouble-card{display:grid;grid-template-columns:118px 1fr;gap:16px;align-items:center;border-radius:18px;padding:16px 18px;border:1px solid var(--rp-line);min-height:158px}
+    .trouble-card:nth-child(1){background:#fff6ec}.trouble-card:nth-child(2){background:#fff0ed}.trouble-card:nth-child(3){background:var(--rp-green)}.trouble-card:nth-child(4){background:var(--rp-purple)}
+    .trouble-visual{height:118px;border-radius:15px;background:rgba(255,255,255,.78);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(232,117,24,.08)}
+    .trouble-visual img{width:100%;height:100%;object-fit:contain;padding:4px}
+    .trouble-label{display:inline-block;padding:4px 10px;border-radius:999px;background:#3e3934;color:#fff;font-size:.76rem;font-weight:900;margin-bottom:6px}.trouble-card h3{margin:0 0 5px;font-size:1.08rem}.trouble-card ul{margin:0;padding-left:1.1em;line-height:1.65;color:#625a53;font-size:.83rem}
+
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+    .flow-card{position:relative;background:#fff;border:1px solid var(--rp-line);border-radius:17px;padding:19px 17px;min-height:170px;box-shadow:0 5px 16px rgba(70,50,30,.04)}
+    .flow-card:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#fff3e6;color:var(--rp-orange);font-weight:900;z-index:2}
+    .flow-num{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:var(--rp-orange);color:#fff;font-weight:900;margin-bottom:11px;font-size:.85rem}.flow-card h3{margin:0 0 6px;font-size:1rem}.flow-card p{margin:0;color:#665e57;font-size:.83rem;line-height:1.7}
+
+    .procedure{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}
+    .procedure-box,.procedure-office{background:#fff;border:1px solid var(--rp-line);border-radius:18px;padding:22px}.procedure-box h3,.procedure-office h3{margin:0 0 9px;font-size:1.12rem}.procedure-box p,.procedure-office p{margin:0;color:#625a53;font-size:.87rem;line-height:1.75}.procedure-list{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:13px}.procedure-item{border-radius:11px;background:#fff8ef;border:1px solid #f1dfc8;padding:10px 7px;text-align:center;font-weight:800;font-size:.75rem}.procedure-office{display:flex;align-items:center;gap:15px;background:linear-gradient(135deg,#fffaf4,#fff)}.office-mark{width:55px;height:55px;flex:0 0 auto;border-radius:15px;background:#fff0df;display:grid;place-items:center;font-size:1.8rem}
+
+    .repair-cta{padding:45px 0;background:linear-gradient(120deg,#e87518,#d25f0c);color:#fff}.repair-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.repair-cta h2{font-size:clamp(1.65rem,2.7vw,2.35rem);margin:0 0 5px;color:#fff}.repair-cta p{margin:0;max-width:700px;font-size:.9rem;line-height:1.75}.repair-cta-actions{text-align:center;flex:0 0 auto}.repair-cta .button{background:#fff;color:#b9570c;border-color:#fff;min-height:49px;font-size:1rem;box-shadow:0 7px 20px rgba(0,0,0,.12)}.cta-hours{margin-top:7px;font-size:.76rem;font-weight:700}.repair-bottom-note{margin-top:10px;font-size:.75rem;opacity:.9}
+
+    .repair-infographic{width:100%;display:block;background:#fff;border:1px solid var(--rp-line);border-radius:22px;overflow:hidden;box-shadow:0 8px 24px rgba(70,50,30,.05)}
+    .repair-infographic img{display:block;width:100%;height:auto;margin:0}
+    .repair-accessible-note{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    @media(max-width:950px){
+      .repair-hero-grid{grid-template-columns:1fr;gap:20px}.repair-hero-photo{height:290px}.repair-section-head{display:block}.repair-section-head p{text-align:left;margin-top:7px}.change-grid{grid-template-columns:repeat(3,1fr)}.repair-feature{grid-template-columns:1fr 1fr}.trouble-card{grid-template-columns:95px 1fr}.flow{grid-template-columns:repeat(2,1fr)}.flow-card:not(:last-child)::after{display:none}.procedure{grid-template-columns:1fr}.repair-cta-inner{display:block}.repair-cta-actions{margin-top:18px;text-align:left}
+    }
+    @media(max-width:680px){
+      .repair-page .container{width:min(calc(100% - 28px),1120px)}.repair-crumb{font-size:.72rem}.repair-hero{padding:18px 0 28px}.repair-hero h1{font-size:2rem}.repair-hero h1 .hero-key,.repair-hero h1 .hero-sub{white-space:normal}.repair-lead{font-size:.93rem}.repair-hero-photo{height:235px}.repair-jump{padding-bottom:18px}.repair-jump-inner{justify-content:flex-start}.repair-jump a{font-size:.76rem;padding:7px 10px}.repair-section{padding:40px 0}.repair-section-title h2{font-size:1.42rem;line-height:1.45;white-space:normal;word-break:normal}.repair-number{width:38px;height:38px;font-size:1.1rem;border-radius:11px}.repair-lifespan,.repair-feature,.trouble-grid,.procedure{grid-template-columns:1fr}.life-card{grid-template-columns:1fr;padding:18px 20px}.life-card p{margin-top:8px}.change-grid{grid-template-columns:1fr 1fr;gap:9px}.change-card{min-height:190px;padding:11px 8px}.change-visual{height:96px}.change-card h3{font-size:.88rem}.change-card p{font-size:.72rem}.repair-feature-media{min-height:240px}.repair-feature-media img{height:215px}.repair-feature-copy{padding:19px}.repair-checks{grid-template-columns:1fr}.trouble-card{grid-template-columns:85px 1fr;padding:12px;min-height:132px}.trouble-visual{height:88px}.trouble-label{font-size:.68rem}.trouble-card h3{font-size:.94rem}.trouble-card ul{font-size:.75rem}.flow{grid-template-columns:1fr}.flow-card{min-height:0}.procedure-list{grid-template-columns:1fr 1fr}.procedure-office{align-items:flex-start}.repair-cta{padding:38px 0}.repair-cta p{font-size:.82rem}.repair-cta .button{width:100%}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"那覇市の補装具の修理・調整・作り直し",
+    "url":"https://otas-hosougukoubou.com/repair.html",
+    "description":"那覇市のオータス補装具工房による補装具の修理・調整・作り直しの案内ページ。",
+    "isPartOf":{"@type":"WebSite","name":"オータス補装具工房","url":"https://otas-hosougukoubou.com/"},
+    "about":["補装具の修理","補装具の調整","短下肢装具","装具の作り直し"]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html#top"><img src="assets/logo.png" alt="OTAS 補装具工房"><span>株式会社オータス補装具工房</span></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">メニュー</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html#services">サービス</a>
+      <a href="repair.html" aria-current="page">修理・調整</a>
+      <a href="insole.html">インソール</a>
+      <a href="index.html#about">会社案内</a>
+      <a href="index.html#first-visit">初めての方へ</a>
+      <a href="index.html#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="repair-page">
+  <div class="container repair-crumb"><a href="index.html">ホーム</a>　›　補装具の製作・修理・調整　›　装具の修理・調整・作り直し</div>
+
+  <section class="repair-hero">
+    <div class="container repair-hero-grid">
+      <div>
+        <p class="repair-kicker">ORTHOTIC REPAIR & ADJUSTMENT</p>
+        <h1><strong class="hero-key">「合わない・痛い・壊れた」なら、</strong><span class="hero-sub">まずはご相談ください。</span></h1>
+        <p class="repair-lead">身体の変化や日々の使用によって、装具の状態も少しずつ変わります。オータス補装具工房では、今の状態を確認し、修理・調整で対応できるか、作り直しが必要かを一緒に考えます。</p>
+        <div class="repair-hero-call"><a class="button primary" href="tel:0989870655">098-987-0655　相談する</a><span class="repair-call-note">受付 9:00～17:30 ／ 土・日・祝日休み</span></div>
+      </div>
+      <img class="repair-hero-photo" src="assets/repair-service-v9.jpg" alt="補装具の修理前後のイメージ">
+    </div>
+  </section>
+
+  <nav class="repair-jump" aria-label="ページ内メニュー">
+    <div class="container repair-jump-inner">
+      <a href="#timing"><b>1</b>作り直しの目安</a><a href="#changes"><b>2</b>身体の変化</a><a href="#repair"><b>3</b>修理・調整</a><a href="#flow"><b>4</b>流れ</a><a href="#system"><b>5</b>制度について</a><a href="#trouble"><b>6</b>こんな時はご相談</a>
+    </div>
+  </nav>
+
+  <section id="timing" class="repair-section">
+    <div class="container">
+      <div class="repair-section-head"><div class="repair-section-title"><span class="repair-number">1</span><h2>装具には「作り直し」の目安があります</h2></div><p>使用年数だけで決まるものではありません。身体の状態や装具の劣化によって、早めの見直しが必要になる場合があります。</p></div>
+      <div class="repair-lifespan">
+        <article class="life-card"><div><h3>短下肢装具（プラスチック型）</h3><div class="life-time">約1年6か月</div></div><p>作り直しの目安のひとつです。身体の変化や装具の状態によって時期は前後します。</p></article>
+        <article class="life-card"><div><h3>短下肢装具（金属支柱型）</h3><div class="life-time">約3年</div></div><p>作り直しの目安のひとつです。使用状況や身体の状態によって早めの見直しが必要な場合があります。</p></article>
+      </div>
+      <p class="repair-note">※作り直しの時期や修理の可否は、装具の種類・状態・身体の変化などによって異なります。</p>
+    </div>
+  </section>
+
+  <section id="changes" class="repair-section soft">
+    <div class="container">
+      <div class="repair-section-head"><div class="repair-section-title"><span class="repair-number">2</span><h2>こんな身体の変化はありませんか？</h2></div><p>リハビリや日常生活によって身体の状態は変化します。以前は合っていた装具でも、今の身体に合わなくなることがあります。</p></div>
+      <div class="repair-infographic repair-infographic-section2">
+        <img src="assets/repair-illustrations/section2.png" alt="身体の変化によって装具が合わなくなる例：足が細くなった、足が太くなった、足部の変形が強くなった、歩き方が変わった、歩行状況や能力が変化した場合" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="repair" class="repair-section">
+    <div class="container">
+      <div class="repair-section-head"><div class="repair-section-title"><span class="repair-number">3</span><h2>まずは「修理・調整」を検討します</h2></div><p>壊れているからといって、すぐに作り直しとは限りません。状態によっては修理や調整で使い続けられる場合があります。</p></div>
+      <div class="repair-feature">
+        <div class="repair-feature-media"><img src="assets/repair-before-after.jpg" alt="補装具の修理前後の比較"></div>
+        <div class="repair-feature-copy">
+          <h3>今の装具を活かせるか、状態を確認します</h3>
+          <p>装具の破損・劣化だけでなく、身体への当たりやフィット感、歩きやすさなども含めてご相談ください。</p>
+          <div class="repair-checks"><div class="repair-check">ベルト・面ファスナーの交換</div><div class="repair-check">部品の交換・補修</div><div class="repair-check">本体の補修</div><div class="repair-check">身体に合わせた調整</div><div class="repair-check">靴底・足底部のトラブル</div><div class="repair-check">痛み・違和感の相談</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="flow" class="repair-section">
+    <div class="container">
+      <div class="repair-section-head"><div class="repair-section-title"><span class="repair-number">4</span><h2>修理・調整・作り直しの流れ</h2></div><p>まず状態を確認し、今の装具に必要な対応を一緒に考えます。</p></div>
+      <div class="flow">
+        <article class="flow-card"><span class="flow-num">01</span><h3>まずはご相談</h3><p>「どこが気になるか」「どのような装具か」を、分かる範囲でお聞かせください。</p></article>
+        <article class="flow-card"><span class="flow-num">02</span><h3>状態を確認</h3><p>装具の破損・劣化や身体への適合などを確認します。</p></article>
+        <article class="flow-card"><span class="flow-num">03</span><h3>修理・調整をご提案</h3><p>修理や調整で対応できる場合は、必要な内容をご案内します。</p></article>
+        <article class="flow-card"><span class="flow-num">04</span><h3>作り直しもご相談</h3><p>対応が難しい場合は、新しい装具についてご相談します。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="system" class="repair-section soft">
+    <div class="container">
+      <div class="repair-section-head"><div class="repair-section-title"><span class="repair-number">5</span><h2>医療保険・補装具費支給制度について</h2></div><p>装具の種類や作製の経緯によって、利用できる制度や手続きが異なります。</p></div>
+      <div class="procedure">
+        <div class="procedure-box">
+          <h3>治療用装具を医療保険で作られた方へ</h3>
+          <p>治療用装具を作製した後、身体障害者手帳を取得された方は、補装具費支給制度を利用できる場合があります。修理や作り直しも、装具の状態や制度上の要件によって手続きが異なります。</p>
+          <div class="procedure-list"><div class="procedure-item">身体障害者手帳</div><div class="procedure-item">印鑑</div><div class="procedure-item">マイナンバーカード等</div><div class="procedure-item">修理見積書等</div></div>
+        </div>
+        <div class="procedure-office"><div class="office-mark">🏢</div><div><h3>修理・申請窓口</h3><p>自治体の障がい福祉担当窓口などへの確認が必要になる場合があります。必要な書類や手続きについては、自治体へご確認ください。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trouble" class="repair-section soft">
+    <div class="container">
+      <div class="repair-infographic repair-infographic-section6">
+        <img src="assets/repair-illustrations/section6.png" alt="装具が合わなくなった、ベルトのトラブル、靴底や底のトラブル、その他の変化や不具合があるときはお気軽にご相談ください" loading="lazy">
+      </div>
+      <div class="repair-accessible-note">装具が合わなくなった、ベルトが切れた・ほつれた、靴底が剥がれた・すり減った、ひび・異音・痛み・違和感などがある場合は、修理や調整についてご相談ください。</div>
+    </div>
+  </section>
+
+  <section class="repair-cta">
+    <div class="container repair-cta-inner">
+      <div><h2>装具のことで、お困りではありませんか？</h2><p>「これくらいなら大丈夫かな？」と思うことでも、早めの相談で修理や調整で対応できる場合があります。那覇市で補装具の修理・調整・作り直しをご検討の方はお気軽にご相談ください。</p><div class="repair-bottom-note">株式会社オータス補装具工房 ／ 那覇市三原1-31-18-103</div></div>
+      <div class="repair-cta-actions"><a class="button" href="tel:0989870655">098-987-0655　お電話で相談する</a><div class="cta-hours">受付 9:00～17:30 ／ 土・日・祝日休み</div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner"><span>株式会社オータス補装具工房</span><span>© OTAS Orthotics Workshop</span></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
